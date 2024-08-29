@@ -10,7 +10,7 @@ export const Products = () => {
 
           return (
             <li>
-              <Link to={`product-${index}`}>{product}</Link>
+              <Link to={`product-${index+1}`}>{product}</Link>
             </li>
           )
         })

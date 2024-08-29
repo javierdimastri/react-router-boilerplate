@@ -1,9 +1,9 @@
 import react from "react"
-import { Link } from "react-router-dom";
-import { Routes } from "./Routes";
+import { Link, useRoutes } from "react-router-dom";
+import {Routes} from "./Routes";
 
 export default function App() {
-  
+  const routeResult = useRoutes(Routes);
   return <>
     <header>
         <strong>React Router v6</strong>
@@ -19,7 +19,7 @@ export default function App() {
         </nav>
       </header>
       <main>
-        <Routes />
+        { routeResult }
       </main>
   </>
 }
